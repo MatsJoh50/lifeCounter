@@ -1,0 +1,168 @@
+html {
+    background-color: rgb(218, 238, 212);
+}
+
+/* 
+div{
+    border: 1px solid;
+    margin-left: auto;
+    margin-top: auto;
+} */
+
+.life {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aquamarine;
+    width: 50vw;
+    height: 50vw;
+    border: 1px solid;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30vw;
+    margin-top: 5vh;
+}
+
+p {
+    font-size: 7vh;
+}
+
+.holder {
+    display: flex;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-color: antiquewhite; */
+    height: 15vw;
+    width: 50vw;
+
+
+}
+
+.one {
+    margin-left: 0px;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.five {
+    margin-left: auto;
+    margin-right: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up {
+    background-color: green;
+    width: 15vw;
+    height: 15vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.down {
+    background-color: rgba(255, 0, 0, 0.452);
+    width: 15vw;
+    height: 15vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commander {
+    position: absolute;
+    display: flex;
+    border: 1px solid;
+    background-color: antiquewhite;
+    height: 15vw;
+    width: 15vw;
+}
+
+.cmdDmg {
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    /* border: 1px solid; */
+    top: 13%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10vw;
+
+}
+
+.cmdUp {
+    height: 6vw;
+    width: 6vw;
+
+    position: absolute;
+    display: flex;
+    border: 1px solid;
+
+    bottom: 0%;
+    right: 0%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: green;
+
+    cursor: pointer;
+}
+
+.cmdDown {
+    height: 6vw;
+    width: 6vw;
+
+    position: absolute;
+    display: flex;
+    border: 1px solid;
+
+    bottom: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: brown;
+
+}
+
+.cmdLeft {
+    left: 0px;
+}
+
+.cmdRight {
+    right: 0px;
+}
+
+.cmdTop{
+    top:0%;
+}
+
+.cmdBottom{
+    bottom:0;
+}
