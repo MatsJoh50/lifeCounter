@@ -12,8 +12,11 @@ document.querySelector("#bRight").innerText = cmdDmgBottomRight;
 document.querySelector("#bRight").innerText = cmdDmgBottomRight;
 document.querySelector("#totalLife").innerText = totalLife;
 
+if (totalLife == 39) {
+}
 
 
+//#region Commander dmg 
 ///////// TOP LEFT \\\\\\\\\\
 document.querySelector("#tLeftUp").addEventListener("click", function () {
     cmdDmgTopLeft = cmdDmgTopLeft + 1;
@@ -58,30 +61,31 @@ document.querySelector("#bRightDown").addEventListener("click", function () {
     document.querySelector("#bRight").innerText = cmdDmgBottomRight;
 
 });
+//#endregion
 
-
+//#region Total Life
 ///// LIFE TOTAL \\\\\\
 document.querySelector("#oneUp").addEventListener("click", function () {
     totalLife = totalLife + 1;
     document.querySelector("#totalLife").innerText = totalLife;
-
+    lifeColor();
 });
 document.querySelector("#fiveUp").addEventListener("click", function () {
     totalLife = totalLife + 5;
     document.querySelector("#totalLife").innerText = totalLife;
-
+    lifeColor();
 });
 document.querySelector("#oneDown").addEventListener("click", function () {
     totalLife = totalLife - 1;
     document.querySelector("#totalLife").innerText = totalLife;
-
+    lifeColor();
 });
 document.querySelector("#fiveDown").addEventListener("click", function () {
     totalLife = totalLife - 5;
     document.querySelector("#totalLife").innerText = totalLife;
-
+    lifeColor();
 });
-
+//#endregion
 
 
 function addToNumber(possition, value) {
@@ -105,4 +109,18 @@ function addToNumber(possition, value) {
             break;
 
     }
+}
+
+function lifeColor() {
+
+    if (totalLife < 4) {
+        document.querySelector("#totalLife").style.backgroundColor = "red";
+
+    } else if (totalLife < 11) {
+        document.querySelector("#totalLife").style.backgroundColor = "orange";
+    } else if (totalLife < 21) {
+        document.querySelector("#totalLife").style.backgroundColor = "yellow";
+    } else
+        document.querySelector("#totalLife").style.backgroundColor = "green";
+
 }
