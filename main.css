@@ -14,25 +14,18 @@ div{
     justify-content: center;
     align-items: center;
     font-size: 30vw;
-    margin-top: 5vh;
-
+    
+    margin-top: 28vw;
     margin-left: auto;
     margin-right: auto;
 
     background-color: aquamarine;
-    width: 50vw;
+    width: 45vw;
     height: 50vw;
     border: 1px solid;
 
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30vw;
-    margin-top: 5vh;
-}
 
 p {
     font-size: 7vh;
@@ -46,7 +39,7 @@ p {
 
     /* background-color: antiquewhite; */
     height: 15vw;
-    width: 50vw;
+    width: 45vw;
 
 
 }
@@ -96,10 +89,14 @@ p {
     display: flex;
     border: 1px solid;
     background-color: antiquewhite;
-    height: 20vw;
-    width: 20vw;
+    height: 25vw;
+    width: 25vw;
 }
 
+.i.commander{
+    size: 40px;
+    color: brown;
+}
 .cmdDmg {
     position: absolute;
     height: 5vw;
@@ -116,10 +113,12 @@ p {
     font-size: 10vw;
 
 }
-
+:root{
+    --btn: 12vw;
+}
 .cmdUp {
-    height: 10vw;
-    width: 10vw;
+    height: var(--btn);
+    width: var(--btn);
 
     position: absolute;
     display: flex;
@@ -137,8 +136,8 @@ p {
 }
 
 .cmdDown {
-    height: 10vw;
-    width: 10vw;
+    height: var(--btn);
+    width: var(--btn);
 
     position: absolute;
     display: flex;
