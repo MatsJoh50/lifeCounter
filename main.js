@@ -88,24 +88,19 @@ function addToNumber(possition, value) {
     switch (possition) {
         case tLeft:
             cmdDmgTopLeft = cmdDmgTopLeft + value;
-            // rightPossition.innerText = cmdDmgTopLeft;
 
-            document.querySelector(`#${possition}`).innerHTML = "";
             document.querySelector(`#${possition}`).innerHTML = cmdDmgTopLeft;
             break;
         case tRight:
             cmdDmgTopRight = cmdDmgTopRight + value;
-            document.querySelector(`#${possition}`).innerHTML = "";
             document.querySelector(`#${possition}`).innerHTML = cmdDmgTopRight;
             break;
         case bLeft:
             cmdDmgBottomLeft = cmdDmgBottomLeft + value;
-            document.querySelector(`#${possition}`).innerHTML = "";
             document.querySelector(`#${possition}`).innerHTML = cmdDmgBottomLeft;
             break;
         case bRight:
             possition = possition + value;
-            document.querySelector(`#${possition}`).innerHTML = "";
             document.querySelector(`#${possition}`).innerHTML = cmdDmgBottomRight;
             break;
 
